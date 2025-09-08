@@ -43,3 +43,23 @@ if len(contraseña) >= 8 and len(contraseña) <= 14:
     print("Contraseña valida")
 else:
     print("Contraseña invalida")
+
+# ACTIVIDAD 6
+
+from statistics import mode, median, mean
+import random
+numeros_aleatorios = [random.randint(1 , 100) for i in range(50)]
+
+mean(numeros_aleatorios)
+median(numeros_aleatorios)
+mode(numeros_aleatorios)
+print("El promedio es: ", mean(numeros_aleatorios))
+print("La mediana es: ", median(numeros_aleatorios))
+print("La moda es: ", mode(numeros_aleatorios))
+
+
+# ACTIVIDAD 7
+frase = input("Ingrese una frase: ")
+if frase and frase[-1].lower() in "aeiou":
+    frase += "!"
+print(frase)
