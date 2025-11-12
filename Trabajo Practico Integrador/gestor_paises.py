@@ -1,8 +1,9 @@
 
+
+
 # ---------- Ruta del archivo CSV ----------
 def ruta_csv_local():
     # Construye la ruta del CSV situada en la misma carpeta que este script,
-    # sin usar módulos externos (workaround con __file__ y split).
     # Si por algún motivo __file__ no está definido, devuelve "paises.csv".
     if "__file__" not in globals():
         return "paises.csv"
